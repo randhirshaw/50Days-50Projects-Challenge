@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Alarm Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="updateTime(); setTime();  setRingtone(); setInterval(updateTime,1000)">
+
+  <div class="main-container">
+
+    <div class="controls">
+      <div class="control-1">
+        <div class="c-heading">Set Time</div>
+        <div class="set-time">
+          <label for="hour-slider">H &nbsp; </label>
+          <input class="slider" type="range" name="" id="hour-slider" min="0" max="23" oninput="setTime()" value="0" />
+        </div>
+        <div class="set-time">
+          <label for="minute-slider">M &nbsp; </label>
+          <input class="slider" type="range" name="" id="minute-slider" min="0" max="59" oninput="setTime()"
+            value="0" />
+        </div>
+        <div id="show-alarm-time"></div>
+      </div>
+      <div class="control-2">
+        <div class="c-heading">Set Ringtone</div>
+        <div class="ringtone-btn-container">
+          <button id="ringtone1" class="ringtone-btn">1</button>
+          <button id="ringtone2" class="ringtone-btn">2</button>
+          <button id="ringtone3" class="ringtone-btn">3</button>
+        </div>
+      </div>
+      <div class="control-3">
+        <button id="activate-alarm-btn" onclick="setAlarm();  ">Set</button>
+        <button id="deactivate-alarm-btn" onclick="clearAlarm();  ">
+          del
+        </button>
+      </div>
+    </div>
+    
+    <div class="clock-container">
+      <div class="upper-container">
+        <div id="clock"></div>
+      </div>
+      <div class="lower-container" id="lower-container"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
