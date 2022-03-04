@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #141414;
+  }
+  
+  .controls {
+    height: 500px;
+    width: 300px;
+    box-shadow: inset 5px 5px 10px black, inset 5px 5px 30px rgb(0, 0, 0),
+      inset -5px -5px 10px #363636, inset -5px -5px 30px #363636;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .control-1,
+  .control-2 {
+    margin-top: 20px;
+  }
+  
+  .controls .c-heading {
+    color: #00fffd;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    word-spacing: 6px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .controls .control-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+  }
+  
+  .control-1 .set-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 0px;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    background-color: #141414;
+    box-shadow: inset 5px 5px 4px black, inset 5px 5px 10px black,
+      inset -5px -5px 3px #363636, inset -5px -5px 10px #363636;
+    border-radius: 30px;
+    height: 10px;
+    width: 220px;
+    overflow: hidden;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #00fd0a;
+    border-radius: 50%;
+    border: 2px solid #333;
+    box-shadow: -207px 0 0 200px #00fd0a;
+  }
+  .control-1 #show-alarm-time {
+    margin: 10px 0px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  
+  .control-2 .ringtone-btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    margin: 10px 0px;
+    padding: 10px 10px;
+  }
+  
+  .control-2 .ringtone-btn-container .ringtone-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: rgb(30, 255, 0);
+    border: none;
+    background-color: #141414;
+    border: 1px solid #00fd0a;
+    transition: 500ms all;
+  }
+  
+  .ringtone-btn-select {
+    background-color: #141414;
+    box-shadow: 0px 0px 5px #00fd0a, 0px 0px 25px #00fd0a;
+    opacity: 1;
+  }
+  
+  .control-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .control-3 #activate-alarm-btn,
+  .control-3 #deactivate-alarm-btn {
+    padding: 5px 10px;
+    width: 100px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    transition: 100ms all;
+    border-radius: 5px;
+    cursor: pointer;
+    word-spacing: 5px;
+    margin: 0px 10px;
+    height: 40px;
+  }
+  
+  .control-3 #activate-alarm-btn {
+    background-color: #00ffff;
+  }
+  
+  .control-3 #deactivate-alarm-btn {
+    background-color: #00ffff;
+  }
+  .control-3 #activate-alarm-btn:hover {
+    box-shadow: 0px 0px 10px #00ffff, 0px 0px 50px #00ffff;
+  }
+  
+  .control-3 #deactivate-alarm-btn:hover {
+    box-shadow: 0px 0px 10px #00ffff, 0px 0px 50px #00ffff;
+  }
+  .control-3 #activate-alarm-btn:active,
+  .control-3 #deactivate-alarm-btn:active {
+    transform: translateY(15px);
+  }
+  
+  .clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    height: 600px;
+  }
+  
+  #clock {
+    padding: 30px 40px;
+    background-color: #141414;
+    box-shadow: inset 5px 5px 10px black, inset 5px 5px 30px rgb(0, 0, 0),
+      inset -5px -5px 10px #363636, inset -5px -5px 30px #363636;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    width: 800px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .lower-container {
+    width: 800px;
+    height: 300px;
+    box-shadow: inset 5px 5px 10px black, inset 5px 5px 30px rgb(0, 0, 0),
+      inset -5px -5px 10px #363636, inset -5px -5px 30px #363636;
+  }
+  
+  .gif {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212)),
+      url(img/wave1.gif);
+    background-position: center;
+    filter: contrast(190%);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+  
