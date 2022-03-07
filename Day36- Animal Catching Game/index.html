@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catch the Animal</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Welcome to Catch the Animal Game!</h1>
+      <button class="btn" id="start-btn">Play Game</button>
+    </div>
+
+    <div class="screen">
+      <h1>Choose your "favorite" Animal!</h1>
+      <ul class="animals-list">
+        <li>
+          <button class="choose-animal-btn">
+            <p>Penguin</p>
+            <img src="http://pngimg.com/uploads/penguin/pinguin_PNG17.png" alt="penguin">
+          </button>
+        </li>
+        <li>
+          <button class="choose-animal-btn">
+            <p>Chicken</p>
+            <img src="http://pngimg.com/uploads/cock/cock_PNG25.png" alt="chicken"/>
+          </button>
+        </li>
+        <li>
+          <button class="choose-animal-btn">
+            <p>Parrot</p>
+            <img
+               src="http://pngimg.com/uploads/parrot/parrot_PNG96566.png"
+               alt="parrot"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-animal-btn">
+            <p>Fish</p>
+            <img
+               src="http://pngimg.com/uploads/fish/fish_PNG25114.png"
+               alt="fish"
+               />
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+      <h3 id="time" class="time">Time: 00:00</h3>
+      <h3 id="score" class="score">Score: 0</h3>
+      <h5 id="message" class="message">
+        Are not you annnoyed yet? <br>
+        You Can't Catch all the Animals because
+        you are playing an Impossible game!!
+      </h5>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
