@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f8f9fd;
+  background-color: #000000;
   font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
@@ -17,9 +17,9 @@ body {
 
 .container {
   border-radius: 5px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 10px rgb(255, 255, 255);
   overflow: hidden;
-  width: 300px;
+  width: 450px;
 }
 
 .title {
@@ -33,16 +33,16 @@ body {
 }
 
 .header {
-  background-color: #3e57db;
-  color: #fff;
+  background-color: #00eaff;
+  color: rgb(0, 0, 0);
   padding: 30px 20px;
 }
 
 .header input {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0);
   border: 0;
   border-radius: 50px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 14px;
   padding: 10px 15px;
   width: 100%;
@@ -86,7 +86,7 @@ body {
 }
 
 .user-list li:not(:last-of-type) {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .user-list li.hide {
